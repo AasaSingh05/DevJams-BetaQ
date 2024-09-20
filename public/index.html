@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>React App</title>
+  <!-- Add your stylesheet here if needed -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Root div where React will render your components -->
+  <div id="root"></div>
+  
+  <!-- Include React and React DOM libraries -->
+  <script src="https://unpkg.com/react/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+
+  <!-- Include Babel to support JSX in script tags (for development only) -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Include your React components here -->
+  <script type="text/babel">
+    // Example React Component
+    function App() {
+      return (
+        <div>
+          <h1>Hello, React!</h1>
+          <p>This is a simple React application.</p>
+        </div>
+      );
+    }
+
+    // Render the App component inside the root div
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+</body>
+</html>
